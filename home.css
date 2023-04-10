@@ -5,33 +5,50 @@
         #upper_nav{
             background-color: antiquewhite;
             float: right;
+            width: 300px;
+            height: 5%;
         }
         header{
-            background-color: blanchedalmond;
+            background-color: darkcyan;
+            clear: both;
+            width: 100%;
+            height: 85%;
         }
         #under_nav{
             background-color: beige;
             float: left;
+            width: 100%;
+            height: 15%;
         }
         #ju_prof{
             background-color: darkgreen;
             clear: both;
             float: left;
+            width: 25%;
+            height: 100%;
         }
         #ju_page{
             background-color: darkolivegreen;
             float: right;
+            width: 75%;
+            height: 100%;
         }
         #seo_prof{
             background-color: darkorchid;
             clear: left;
             float: right;
+            width: 25%;
+            height: 90%;
         }
         #seo_page{
             background-color: darkmagenta;
             float: left;
+            width: 75%;
+            height: 90%;
         }
         footer{
             background-color: darkkhaki;
             clear: both;
+            width: 40%;
+            height: 10%;
         }
