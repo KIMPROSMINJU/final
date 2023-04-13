@@ -6,35 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Portfolio Page</title>
     <link rel="stylesheet" href="home.css">
-    <link rel="stylesheet" href="home_cols.css">
 </head>
 <body>
     <!-- 상단 Navigation -->
-    <nav>
-        <div id="upper_nav">
-            <div class="cols"><a href="home_S.html">S급 페이지</a></div>
-            <div class="cols"><a href="home_A.html">A급 페이지</a></div>
-            <div class="cols"><a href="home_B.html">B급 페이지</a></div>
+    <nav id="upper_nav">
+        <div>
+            <div><a href="home_S.html">S급 페이지</a></div>
+            <div><a href="home_A.html">A급 페이지</a></div>
+            <div><a href="home_B.html">B급 페이지</a></div>
         </div>
     </nav>
 
     <!-- Header -->
     <header>header</header>
-
+    
     <!-- Header 밑 Navigation -->
-    <nav id="under_nav">
-        <div class="cols"><a href="#ju_prof">박민주</a></div>
-        <div class="cols"><a href="#seo_prof">김민서</a></div>
-        <div class="cols"><a href="#">방명록</a></div>
-        <div class="cols"><a href="#">공동계획</a></div>
+    <nav id="lower_nav">
+        <div>
+            <div><a href="#">박민주</a></div>
+            <div><a href="#">김민서</a></div>
+            <div><a href="#">방명록</a></div>
+            <div><a href="#">공동계획</a></div>
+        </div>
     </nav>
 
-    <!-- 박민주 프로필인 aside -->
-    <aside id="ju_prof">
-        <div id="prof">
+    <!-- 박민주 프로필인 section -->
+    <section id="ju_prof">
+        <div>
             <img src="" alt="">
             <h1>박민주</h1>
-            <p>좌우명을 써보장!</p>
+            <p>안녕하세요 ~.~ <br>저는 풀스택 개발자가 되고 싶은 박민주랍니다! <br>저의 페이지에 와주셔서 감사해요 &gt;~&lt;</p>
             <div class="prof_nav">
                 <span><a href="https://github.com/KIMPROSMINJU">Github</a></span>
                 <span><a href="#">Blog</a></span>
@@ -42,14 +43,11 @@
                 <span><a href="#">OpenChat</a></span>
             </div>
         </div>
-    </aside>
+    </section>
 
-    <!-- 박민주 페이지 section -->
-    <section id="ju_page">ju page</section>
-
-    <!-- 김민서 프로필인 aside -->
-    <aside id="seo_prof">
-        <div id="prof">
+    <!-- 김민서 프로필인 section -->
+    <section id="seo_prof">
+        <div>
             <img src="" alt="">
             <h1>김민서</h1>
             <p>좌우명을 써보장!</p>
@@ -60,16 +58,14 @@
                 <span><a href="#">OpenChat</a></span>
             </div>
         </div>
-    </aside>
+    </section>
     
-    <!-- 김민서 페이지 section -->
-    <section id="seo_page">seo page</section>
-
     <!-- Footer -->
     <footer>
-        <div class="cols"><a href="">Contact</a></div>
-        <div class="cols"><a href="">Code</a></div>
-        <br>
+        <div>
+            <div><a href="">Contact</a></div>
+            <div><a href="">Code</a></div>
+        </div>
         <div>Copyright on Me! All right reserved I guess :/</div>
     </footer>
 </body>
