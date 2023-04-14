@@ -37,13 +37,16 @@
             float: left;
             width: 400px;
             margin-bottom: 10px;
-            height: 580px;
+            height: 565px;
             margin-right: 10px;
+            text-align: center;
+            padding-top: 15px;
+            border-radius: 20px;
         }
         section{
             float: left;
             background-color: blue;
-            width: 1000px;
+            width: 1077px;
             height: 580px;
             margin-bottom: 10px;            
         }
@@ -51,9 +54,11 @@
             background-color: aquamarine;
             float: right;
             width: 400px;
-            height: 580px;
             margin-bottom: 10px;
-            margin-left: 10px;
+            height: 565px;
+            text-align: center;
+            padding-top: 15px;
+            border-radius: 20px;
         }
         footer{
             background-color: darkkhaki;
