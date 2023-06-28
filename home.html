@@ -13,20 +13,33 @@
     <link rel="stylesheet" href="colorbox.css">
     <script src="jquery.colorbox.js"></script>
     <script>
-        alert("새로 추가된 기능 : gallery, colorbox(lightbox)");
+        alert("새로 추가된 기능 : gallery, colorbox(lightbox), 날짜와 현재 시각 출력");
 
         $(document).ready(function(){
             $('.image').colorbox();
         });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            var planLink = document.getElementById('plan');
+            planLink.addEventListener('click', function(event) {
+            event.preventDefault();
+
+            // time.js 파일 로드
+            var script = document.createElement('script');
+            script.src = 'time.js';
+            script.async = true;
+            document.head.appendChild(script);
+            });
+        })
     </script>
 </head>
 <body>
     <!-- 상단 Navigation -->
     <nav id="upper_nav">
         <div>
-            <div><a href="https://www.awwwards.com/">웹디자인</a></div>
-            <div><a href="https://www.acmicpc.net/">백엔드</a></div>
-            <div><a href="http://datamixi.com/web/board/list.do?mId=48&utm_source=google_sa_pc&utm_medium=cpc&utm_campaign=mixi_labeling&utm_term=%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%9D%BC%EB%B2%A8%EB%A7%81&gclid=CjwKCAjwkeqkBhAnEiwA5U-uMz3MJDwyRWAfjXmgRLIARb2s9Jr2TxhDubKSJ8JizTC-V0X7kMx1yhoCJu4QAvD_BwE">데이터관리</a></div>
+            <div><a href="https://www.awwwards.com/" target="_blank">웹디자인</a></div>
+            <div><a href="https://www.acmicpc.net/" target="_blank">백엔드</a></div>
+            <div><a href="http://datamixi.com/web/board/list.do?mId=48&utm_source=google_sa_pc&utm_medium=cpc&utm_campaign=mixi_labeling&utm_term=%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%9D%BC%EB%B2%A8%EB%A7%81&gclid=CjwKCAjwkeqkBhAnEiwA5U-uMz3MJDwyRWAfjXmgRLIARb2s9Jr2TxhDubKSJ8JizTC-V0X7kMx1yhoCJu4QAvD_BwE" target="_blank">데이터관리</a></div>
         </div>
     </nav>
 
@@ -36,8 +49,8 @@
     <!-- Header 밑 Navigation -->
     <nav id="lower_nav">
         <div>
-            <div><a href="lowerpage/guestbook.html">방명록</a></div>
-            <div><a href="#" onclick="alert('이 페이지는 아직 구현하지 않았어요! 클릭 금지!');">공동계획</a></div>
+            <div><a href="lowerpage/guestbook.html" target="_blank">방명록</a></div>
+            <div><a href="#" id="plan">공동계획</a></div>
         </div>
     </nav>
 
@@ -49,10 +62,10 @@
             <a class="image" href="img/210x297.png"><h3>박민주</h3></a>
             <p>안녕하세요, 박민주입니당!<br>포트폴리오는 아직 준비되지 않았지만<br>Profile을 클릭하면 상세 프로필을 보실 수 있습니다<br>&gt;~&lt;</p>
             <div class="prof_nav">
-                <span><a href="https://github.com/KIMPROSMINJU">Github</a></span> &nbsp;
-                <span><a href="https://blog.naver.com/m1nj00371">Blog</a></span> &nbsp;
-                <span><a href="https://www.instagram.com/parkm1nju/">Insta</a></span> &nbsp;
-                <span><a href="https://open.kakao.com/o/sMo61bff">OpenChat</a></span>
+                <span><a href="https://github.com/KIMPROSMINJU" target="_blank">Github</a></span> &nbsp;
+                <span><a href="https://blog.naver.com/m1nj00371" target="_blank">Blog</a></span> &nbsp;
+                <span><a href="https://www.instagram.com/parkm1nju/" target="_blank">Insta</a></span> &nbsp;
+                <span><a href="https://open.kakao.com/o/sMo61bff" target="_blank">OpenChat</a></span>
             </div>
         </div>
     </aside>
@@ -67,7 +80,7 @@
                     <div>
                         <h1>버튼을 눌러 우측으로 넘기시면 소속을 확인하실 수 있습니다!</h1>
                         <p>
-                            방명록 작성을 원하시면 클릭해주세요! >>> <a href="lowerpage/guestbook.html">클릭</a>
+                            방명록 작성을 원하시면 클릭해주세요! >>> <a href="lowerpage/guestbook.html" target="_blank">클릭</a>
                         </p>
                         <p>
                             깃허브를 구경하고 싶으시다면 클릭하세요! >>> <a href="https://github.com/KIMPROSMINJU" target="_blank">클릭</a>
@@ -96,10 +109,10 @@
             <a class="image" href="img/210x297.png"><h3>김민서</h3></a>
             <p>이 친구는 제 단짝입니다!<br>포트폴리오는 아직 준비되지 않았지만<br>Profile을 클릭하면 상세 프로필을 보실 수 있습니다<br>&gt;~&lt;</p>
             <div class="prof_nav">
-                <span><a href="https://www.kpga.co.kr/">KPGA</a></span> &nbsp;
-                <span><a href="https://blog.naver.com/minseov">Blog</a></span> &nbsp;
-                <span><a href="https://www.instagram.com/kimm_.nseo/">Insta</a></span> &nbsp;
-                <span><a href="https://open.kakao.com/o/sfHk2bff">OpenChat</a></span>
+                <span><a href="https://www.kpga.co.kr/" target="_blank">KPGA</a></span> &nbsp;
+                <span><a href="https://blog.naver.com/minseov" target="_blank">Blog</a></span> &nbsp;
+                <span><a href="https://www.instagram.com/kimm_.nseo/" target="_blank">Insta</a></span> &nbsp;
+                <span><a href="https://open.kakao.com/o/sfHk2bff" target="_blank">OpenChat</a></span>
             </div>
         </div>
     </aside>
