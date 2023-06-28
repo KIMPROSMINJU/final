@@ -26,3 +26,36 @@ header{
 footer a{
     font-size: large;
 }
+section > button{
+    font-size: large;
+}
+.item{
+    color: #6c84d1;
+}
+.item ul{
+    font-size: larger;
+}
+.item a{
+    color: #6c84d1;
+    font-weight: bold;
+}
+.item a:hover{
+    font-size: larger;
+    color: rgb(73, 101, 126);
+    font-weight: bolder;
+}
+.item div{
+    text-align: center;
+    font-size: large;
+}
+#left-button, #right-button{
+    color: rgb(73, 101, 126);
+}
+#left-button:hover{
+    color: rgb(0, 93, 175);
+    font-size: larger;
+}
+#right-button:hover{
+    color: rgb(0, 93, 175);
+    font-size: larger;
+}

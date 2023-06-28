@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Portfolio Page</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="text.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="home.js"></script>
+
+    <link rel="stylesheet" href="colorbox.css">
+    <script src="jquery.colorbox.js"></script>
+    <script>
+        alert("새로 추가된 기능 : gallery, colorbox(lightbox)");
+
+        $(document).ready(function(){
+            $('.image').colorbox();
+        });
+    </script>
+</head>
+<body>
+    <!-- 상단 Navigation -->
+    <nav id="upper_nav">
+        <div>
+            <div><a href="https://www.awwwards.com/">웹디자인</a></div>
+            <div><a href="https://www.acmicpc.net/">백엔드</a></div>
+            <div><a href="http://datamixi.com/web/board/list.do?mId=48&utm_source=google_sa_pc&utm_medium=cpc&utm_campaign=mixi_labeling&utm_term=%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%9D%BC%EB%B2%A8%EB%A7%81&gclid=CjwKCAjwkeqkBhAnEiwA5U-uMz3MJDwyRWAfjXmgRLIARb2s9Jr2TxhDubKSJ8JizTC-V0X7kMx1yhoCJu4QAvD_BwE">데이터관리</a></div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header>PORTFOLIO</header>
+    
+    <!-- Header 밑 Navigation -->
+    <nav id="lower_nav">
+        <div>
+            <div><a href="lowerpage/guestbook.html">방명록</a></div>
+            <div><a href="#" onclick="alert('이 페이지는 아직 구현하지 않았어요! 클릭 금지!');">공동계획</a></div>
+        </div>
+    </nav>
+
+    <!-- 박민주 프로필인 aside -->
+    <aside id="ju_prof">
+        <div>
+            <h1><a href="ju_prof.html">Profile</a></h1>
+            <img src="https://via.placeholder.com/210x297" alt="">
+            <a class="image" href="img/210x297.png"><h3>박민주</h3></a>
+            <p>안녕하세요, 박민주입니당!<br>포트폴리오는 아직 준비되지 않았지만<br>Profile을 클릭하면 상세 프로필을 보실 수 있습니다<br>&gt;~&lt;</p>
+            <div class="prof_nav">
+                <span><a href="https://github.com/KIMPROSMINJU">Github</a></span> &nbsp;
+                <span><a href="https://blog.naver.com/m1nj00371">Blog</a></span> &nbsp;
+                <span><a href="https://www.instagram.com/parkm1nju/">Insta</a></span> &nbsp;
+                <span><a href="https://open.kakao.com/o/sMo61bff">OpenChat</a></span>
+            </div>
+        </div>
+    </aside>
+
+    <!-- 공통 부분 section -->
+    <section>
+        <button id="left-button">prev</button>
+        <div data-role="slider" data-width="920" data-height="565">
+            <div class="container">
+                <div class="item">
+                    <br>
+                    <div>
+                        <h1>버튼을 눌러 우측으로 넘기시면 소속을 확인하실 수 있습니다!</h1>
+                        <p>
+                            방명록 작성을 원하시면 클릭해주세요! >>> <a href="lowerpage/guestbook.html">클릭</a>
+                        </p>
+                        <p>
+                            깃허브를 구경하고 싶으시다면 클릭하세요! >>> <a href="https://github.com/KIMPROSMINJU" target="_blank">클릭</a>
+                        </p>
+                        <p>
+                            문의사항이 있으시다면 클릭해주세요! >>> <a href="#" onclick="alert('박민주\nemail : b.m1nj00371@gmail.com\ncall : 010-XXXX-XXXX\nins : @abcde')">클릭</a>
+                        </p>
+                    </div>
+                    <br>
+                    <div>
+                        <img src="https://via.placeholder.com/920x300" alt="">
+                    </div>
+                </div>
+                <div class="item"><iframe src="https://www.kopo.ac.kr/jungsu/content.do?menu=12489" frameborder="0" width="100%" height="100%"></iframe></div>
+                <div class="item"><iframe src="https://www.kpga.co.kr/" frameborder="0" width="100%" height="100%"></iframe></div>
+            </div>
+        </div>
+        <button id="right-button">next</button>
+    </section>
+
+    <!-- 김민서 프로필인 aside -->
+    <aside id="seo_prof">
+        <div>
+            <h1><a href="seo_prof.html">Profile</a></h1>
+            <img src="https://via.placeholder.com/210x297" alt="">
+            <a class="image" href="img/210x297.png"><h3>김민서</h3></a>
+            <p>이 친구는 제 단짝입니다!<br>포트폴리오는 아직 준비되지 않았지만<br>Profile을 클릭하면 상세 프로필을 보실 수 있습니다<br>&gt;~&lt;</p>
+            <div class="prof_nav">
+                <span><a href="https://www.kpga.co.kr/">KPGA</a></span> &nbsp;
+                <span><a href="https://blog.naver.com/minseov">Blog</a></span> &nbsp;
+                <span><a href="https://www.instagram.com/kimm_.nseo/">Insta</a></span> &nbsp;
+                <span><a href="https://open.kakao.com/o/sfHk2bff">OpenChat</a></span>
+            </div>
+        </div>
+    </aside>
+    
+    <!-- Footer -->
+    <footer>
+        <div>
+            <div><a href="#" onclick="alert('박민주\nemail : b.m1nj00371@gmail.com\ncall : 010-XXXX-XXXX\nins : @abcde')"><b>Contact</b></a></div>
+            <div><a href="lowerpage/code.html" target="_blank"><b>Code</b></a></div>
+        </div>
+        <div><small><small>Copyright on Me! All right reserved I guess :/</small></small></div>
+    </footer>
+</body>
+</html>
